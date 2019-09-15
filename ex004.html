@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 25pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Digite seu nome: ');
+        var idade = Number(window.prompt('Agora digite sua idade: '));
+        var acao = window.prompt('Digite oque deseja fazer: ');
+        window.confirm(`Seu nome é ${nome}, voce tem ${idade} anos , e deseja ${acao}`);
+        document.writeln(`${nome}<br/> ${idade} <br/> ${acao}`);
+    </script>
+</body>
+</html>

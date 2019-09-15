@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            font: normal 20pt Arial;
+            background: darkblue;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        div#area1 {
+            
+        }
+        div#area2 {
+            margin-bottom: -200px
+        }
+        div#area3 {
+            margin-left: 400px;
+            margin-bottom: -200px
+        }
+        div#area4 {
+            margin-left: 400px;
+            margin-top: -400px
+        }
+        div#area5 {
+            margin-left: 400px;
+            margin-top: -400px;
+        }
+        div#area6 {
+            margin-left: 200px;
+            margin-top: -200px;
+        }
+        div#area7 {
+            margin-left: 200px;
+        }
+        div#area8 {
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body> 
+    <div id = "area" onclick="clicar(0)">
+        Clicar
+    </div>
+    <div id = "area1" onclick="clicar(1)">
+        Clicar
+    </div>
+    <div id = "area2" onclick="clicar(2)">
+        Clicar
+    </div>
+    <div id = "area3" onclick="clicar(3)">
+        Clicar
+    </div>
+    <div id = "area4" onclick="clicar(4)">
+        Clicar
+    </div>
+    <div id = "area5" onclick="clicar(5)">
+        Clicar
+    </div>
+    <div id = "area6" onclick="clicar(6)">
+        Clicar
+    </div>
+    <div id = "area7" onclick="clicar(7)">
+        Clicar
+    </div>
+    <div id = "area8" onclick="clicar(8)">
+        Clicar
+    </div>
+    <script>
+        var flag = 1
+        function clicar(x) {
+            if(flag == 1){
+            var a = window.document.querySelectorAll('div')[x];
+            a.innerText =  'x';
+            a.style.font.fontsize = 50;
+            a.style.background = 'black';
+            flag = 0;
+            }else {
+                var a = window.document.querySelectorAll('div')[x];
+                a.innerText =  'o';
+                a.style.background = 'red';
+                flag = 1;
+            }
+        }
+    </script>
+</body>
+</html>
